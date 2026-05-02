@@ -3,21 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Deepesh Singh</title>
+    <title>Deepesh Singh | Portfolio</title>
     <style>
-        body { font-family: sans-serif; background: #0d1117; color: white; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
-        .card { border: 1px solid #30363d; padding: 40px; border-radius: 15px; background: #161b22; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
-        h1 { color: #58a6ff; font-size: 2.5rem; margin: 0; }
-        p { color: #8b949e; font-size: 1.2rem; margin-top: 10px; }
-        .btn { display: inline-block; margin-top: 20px; padding: 10px 20px; background: #238636; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        :root {
+            --primary: #58a6ff;
+            --bg: #0d1117;
+            --card: #161b22;
+            --text: #c9d1d9;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+        }
+        .card {
+            background: var(--card);
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        h1 { color: var(--primary); margin-bottom: 5px; font-size: 2rem; }
+        .subtitle { font-size: 1.1rem; color: #8b949e; margin-bottom: 20px; }
+        .section-title {
+            text-align: left;
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 5px;
+            margin-top: 25px;
+            color: var(--primary);
+            font-size: 1.2rem;
+        }
+        .about-text { text-align: left; line-height: 1.6; font-size: 0.95rem; }
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .skill-tag {
+            background: #21262d;
+            border: 1px solid #30363d;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            background: #238636;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn:hover { background: #2ea043; }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>THE DEEPESH SINGH</h1>
-        <p>Software Developer | Chaudhary Charan Singh University (CCSU)</p>
-        <p>My Portfolio is officially LIVE!</p>
-        <a href="#" class="btn">Coming Soon...</a>
+    <div class="container">
+        <div class="card">
+            <h1>THE DEEPESH SINGH</h1>
+            <p class="subtitle">Software Developer | CCSU Student</p>
+            
+            <div class="section-title">About Me</div>
+            <p class="about-text">
+                I am a passionate developer from Chaudhary Charan Singh University (CCSU). 
+                Currently deep-diving into web architecture and building responsive applications. 
+                Based in the Delhi NCR region, I am always looking for exciting internship opportunities.
+            </p>
+
+            <div class="section-title">Skills</div>
+            <div class="skills-grid">
+                <span class="skill-tag">HTML5 & CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Git & GitHub</span>
+            </div>
+
+            <div class="section-title">Education</div>
+            <p class="about-text">B.Tech / BCA - Chaudhary Charan Singh University</p>
+
+            <a href="mailto:deepeshsingh@gmail.com" class="btn">Hire Me / Contact</a>
+        </div>
     </div>
 </body>
 </html>
